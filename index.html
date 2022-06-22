@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<title>Plugin Sample</title>
+</head>
+ 
+<body>
+  <label>
+    Write Key: 
+    <input type="text" id="writeKey" size="32" value="" />
+  </label>
+  <button id="load">Load</button>
+
+  <button id="next" disabled>Trigger next!</button>
+  <div>
+    <button id="registerBefore" disabled>Before</button>
+    <button id="registerEnrichment" disabled>Enrichment</button>
+    <button id="registerDestination" disabled>Destination</button>
+    <button id="registerAfter" disabled>After</button>
+    <button id="unloadPlugins" disabled>Unload Plugins</button>
+  </div>
+  <div id="registeredPlugins"></div>
+  <div id="status"></div>
+  <div id="contextContainer"></div>
+  <script src="./dist/main.js"></script>
+</body>
+</html>
